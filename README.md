@@ -59,7 +59,7 @@ std::string GetArray(const int *ARRAY, const int &N)
         stored_value += " " + temp;
         stream.clear();
     }
-    return stored_value; // return string
+    return stored_value;
 }
 ```
 
@@ -79,3 +79,6 @@ Analysis:
 | 1000   | 0              | 0          | 0         | 0        |
 | 10000  | 0              | 0          | 0         | 0        |
 | 100000 | 0              | 0          | 0         | 0        |
+
+- [x] Check 1
+- [ ] Uncheck 2
