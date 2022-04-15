@@ -15,12 +15,12 @@ This project is intended to give the proper calculations for time effiency of th
 ## Tables of Contents
 
 1. [The Program's Behaviour and Features](#the-programs-behaviour-and-features)
-2. [Actual Test Run](#the-programs-behaviour-and-features)
-3. [Actual Output](#implementation)
-4. [What are the Problems we encountered?](#a)
-5. [How did we solve those problems?](#a)
+2. [Actual Test Run](#test-run)
+3. [Actual Output](#output)
+4. [What are the Problems we encountered?](#problems-encuntered)
+5. [How did we solve those problems?](#solving-problems)
 6. [What do we use?](#a)
-7. [Actual Implementation](#a)
+7. [Actual Implementation](#implementation)
 8. [Sorting Algorithm](#a)
 9. [Analysis](#analysis)
 10. [References Used](#references)
@@ -76,6 +76,22 @@ std::string GetArray(const int *ARRAY, const int &N)
 #include <sstream>
 #include <cstring>
 ```
+
+---
+
+## Test Run
+
+---
+
+## Output
+
+---
+
+## Problems Encuntered
+
+---
+
+## Solving Problems
 
 ---
 
