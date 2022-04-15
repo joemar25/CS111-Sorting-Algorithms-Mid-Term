@@ -14,9 +14,16 @@ This project is intended to give the proper calculations for time effiency of th
 
 ## Tables of Contents
 
-1. [a](#the-programs-behaviour-and-features)
-2. b
-3. [c](#implementation)
+1. [The Program's Behaviour and Features](#the-programs-behaviour-and-features)
+2. [Actual Test Run](#the-programs-behaviour-and-features)
+3. [Actual Output](#implementation)
+4. [What are the Problems we encountered?](#a)
+5. [How did we solve those problems?](#a)
+6. [What do we use?](#a)
+7. [Actual Implementation](#a)
+8. [Sorting Algorithm](#a)
+9. [Analysis](#analysis)
+10. [References Used](#references)
 
 ---
 
@@ -70,15 +77,31 @@ std::string GetArray(const int *ARRAY, const int &N)
 #include <cstring>
 ```
 
-Analysis:
+---
 
-| N      | Insertion sort | Merge sort | Quicksort | Heapsort |
-| ------ | -------------- | ---------- | --------- | -------- |
-| 10     | 0              | 0          | 0         | 0        |
-| 100    | 0              | 0          | 0         | 0        |
-| 1000   | 0              | 0          | 0         | 0        |
-| 10000  | 0              | 0          | 0         | 0        |
-| 100000 | 0              | 0          | 0         | 0        |
+## Analysis
+
+|      N | Insertion sort | Mergesort | Quicksort | Heapsort |
+| -----: | :------------- | :-------- | :-------- | :------- |
+|     10 | 0              | 0         | 0         | 0        |
+|    100 | 0              | 0         | 0         | 0        |
+|   1000 | 0              | 0         | 0         | 0        |
+|  10000 | 0              | 0         | 0         | 0        |
+| 100000 | 0              | 0         | 0         | 0        |
 
 - [x] Check 1
 - [ ] Uncheck 2
+
+## References
+
+Dynamic Memory Allocation in C++
+
+- https://techvidvan.com/tutorials/cpp-dynamic-memory-allocation/
+
+Generating Random Numbers
+
+- https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
+
+Insertion Sort
+
+- https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_insertion_sort.htm
