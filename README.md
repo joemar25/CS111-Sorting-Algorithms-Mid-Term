@@ -81,6 +81,18 @@ std::string GetArray(const int *ARRAY, const int &N)
 
 ## Analysis
 
+When array is Random:
+
+|      N | Insertion sort | Mergesort | Quicksort | Heapsort |
+| -----: | :------------- | :-------- | :-------- | :------- |
+|     10 | 0              | 0         | 0         | 0        |
+|    100 | 0              | 0         | 0         | 0        |
+|   1000 | 0              | 0         | 0         | 0        |
+|  10000 | 0              | 0         | 0         | 0        |
+| 100000 | 0              | 0         | 0         | 0        |
+
+When array is Sorted:
+
 |      N | Insertion sort | Mergesort | Quicksort | Heapsort |
 | -----: | :------------- | :-------- | :-------- | :------- |
 |     10 | 0              | 0         | 0         | 0        |
