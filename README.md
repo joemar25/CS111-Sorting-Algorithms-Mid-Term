@@ -99,17 +99,17 @@ https://user-images.githubusercontent.com/80235976/163755648-ab8ad641-82f3-48f7-
 
 <br>
 
-> Randomize Initialized Array Values
+Randomize Initialized Array Values
 
-Using N = 100000
+> Using N = 100000
 
 ![RANDOMIZE](https://user-images.githubusercontent.com/80235976/163756226-42a76de3-d5e7-4dc5-91ff-05cddc2d5710.PNG)
 
 <br>
 
-> Sorted Initialized Array Values
+Sorted Initialized Array Values
 
-Using N = 100000 and X = 7
+> Using N = 100000 and X = 7
 
 ![ALREADY SORTED](https://user-images.githubusercontent.com/80235976/163756230-ceeb10d5-1007-4a54-aeb1-6f93bde0afa8.PNG)
 
@@ -138,13 +138,13 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 ## Solving Problems
 
-Making a function to lessen or remove the loop in our main function (_see: [String Function](#the-program)_).
+- Making a function to lessen or remove the loop in our main function (_see: [String Function](#the-program)_).
 
-Using constant (`const data_type var_name`) to make variable unchangable during the function call is a handy way to secure the data that we need to handle.
+- Using constant (`const data_type var_name`) to make variable unchangable during the function call is a handy way to secure the data that we need to handle.
 
-Using reference (`data_type &var_name`) instead of tipical pass by value to a function, making sure that we only have one variable declaration instead of making another copy of that variable.
+- Using reference (`data_type &var_name`) instead of tipical pass by value to a function, making sure that we only have one variable declaration instead of making another copy of that variable.
 
-Getting The sorted values
+- `Getting The sorted values`
 
 ```
 (TEST)
@@ -170,7 +170,7 @@ array values = 8, 13, 18
 
 ## The Program
 
-> The include files used by the program.
+The include files used by the program.
 
 ```c++
 #include <iostream>
@@ -182,7 +182,21 @@ array values = 8, 13, 18
 #define MAXRANGE 1000000
 ```
 
-> For printing the array values without using a lot of for-loops in the main function, we have used the function below:
+> `<iostream>`helps us to use cout and cin (basically we need it, for us to input and output something.)
+
+> `<cstdlib>` helps us to use several general-purpose functions that are defined in this header, including dynamic memory management, random number generation, communication with the environment, integer arithmetic, searching, sorting, and converting.
+
+> `<cstring>` helps us to use string in our code
+
+> `<sstream>` helps us to use sstream, which is an object that was declared to perform the input/output operations on strings `(we use this to convert the integer to a string for us to easily output them without using repeated loops in our main`.
+
+> `<fstream>` helps us to use File, to output/write to files.
+
+> `<ctime>` helps us to use
+
+> `MAXRANGE 1000000` is used as a default value for the maximum range
+
+For printing the array values without using a lot of for-loops in the main function, we have used the function below:
 
 ```c++
 std::string GetArray(const int *ARRAY, const int &N)
@@ -202,14 +216,16 @@ std::string GetArray(const int *ARRAY, const int &N)
 }
 ```
 
-<br><br>
+<br>
 
-> It uses both `sstream` and `cstring`.
+> Above It uses both `sstream` and `cstring`.
 
 ```c++
-#include <sstream>
 #include <cstring>
+#include <sstream>
 ```
+
+> The string stream associates a string object with a string. Using this we can read from string as if it were a stream like cin. As said, we use this to perform a convertion from integer to string. Why? we want to lessen the loop inside the main function.
 
 <br>
 
@@ -417,9 +433,25 @@ Insertion Sort
 
 - https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_insertion_sort.htm
 
-Time for C
+Time for C/C++
 
--http://www.gnu.org/software/libc/manual/html_node/CPU-Time.html
+- http://www.gnu.org/software/libc/manual/html_node/CPU-Time.html
+
+-https://www.tutorialspoint.com/how-to-use-clock-function-in-cplusplus
+
+Standard Library
+
+- https://www.programiz.com/cpp-programming/library-function/cstdlib
+
+File Handling
+
+- https://www.guru99.com/cpp-file-read-write-open.html
+
+String Stream
+
+- https://www.tutorialspoint.com/stringstream-in-cplusplus
+
+- https://sonnevision.wordpress.com/2012/01/11/how-to-clear-a-stringstream/
 
 <br>
 
