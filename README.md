@@ -69,7 +69,17 @@ This project is intended to give the proper calculations for time effiency of th
 
 ## Test Run
 
+Below is the test run (Restrictions) for inputs on selecting if the user wants to use array that are randomly initialized or sorted initialized.
+
 https://user-images.githubusercontent.com/80235976/163752931-ad70ead9-d20c-4cee-9f40-03089bde1c99.mp4
+
+Below is the test run for all values that are need to analyze if the array has random values.
+
+https://user-images.githubusercontent.com/80235976/163754897-e695b4e3-d93b-4b13-8c7e-02823d4eb5d5.mp4
+
+Below is the test run for all values that are need to analyze if the array has sorted values.
+
+> Note: Video file uploading size in README.md must be below 10mb.
 
 <br>
 
@@ -85,7 +95,7 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 `[Random Generated Values]` is good since it does not generated a single problem for us.
 
-In conclusion: it is highly suggested to use other text viewer to view result incase the generated arrays are unreadable or in Chinese Characters.
+`In conclusion:` It is highly suggested to use other text viewer to view result incase the generated arrays are unreadable or in Chinese Characters.
 
 <br>
 
@@ -158,6 +168,8 @@ std::string GetArray(const int *ARRAY, const int &N)
 
 > Insertion Sort:
 
+It uses the functions below to use the sorting method for Insertion Sort.
+
 ```c++
 void InsertionSort(int *ARRAY, const int &length)
 {
@@ -175,6 +187,8 @@ void InsertionSort(int *ARRAY, const int &length)
 ```
 
 > Merge Sort:
+
+It uses the functions below to use the sorting method for Merge Sort.
 
 ```c++
 void Merge(int *ARRAY, const int lower, const int middle, const int upper)
@@ -216,7 +230,7 @@ void MergeSort(int *ARRAY, const int lower, const int upper)
 }
 ```
 
-> Both Quick and Heap sort uses this function for swapping:
+> Both Quick and Heap sort uses this function for swapping.
 
 ```c++
 void Swap(int *a, int *b)
@@ -228,6 +242,7 @@ void Swap(int *a, int *b)
 ```
 
 > Quick Sort:
+> It uses the functions below to use the sorting method for Quick Sort.
 
 ```c++
 int Partition(int *ARRAY, const int low, const int high)
@@ -264,6 +279,8 @@ void QuickSort(int *ARRAY, const int low, const int high)
 ```
 
 > Heap Sort:
+
+It uses the functions below to use the sorting method for Heap Sort.
 
 ```c++
 void Heapify(int *ARRAY, const int length, const int index)
@@ -347,9 +364,6 @@ Insertion Sort
 
 - https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_insertion_sort.htm
 
-- [x] Check 1
-- [ ] Uncheck 2
-
 <br>
 
 ---
@@ -366,4 +380,4 @@ We used different strategies mainly data structures in the problems to experemen
 
 <br>
 
-# Thank You For Reading This File
+# `Thank You For Reading This File`
