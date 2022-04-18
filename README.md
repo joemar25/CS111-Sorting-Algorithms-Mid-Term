@@ -92,7 +92,7 @@ https://user-images.githubusercontent.com/80235976/163755648-ab8ad641-82f3-48f7-
 
 ## The Output
 
-##### NEED TO OUTPUT
+##### _NEED TO OUTPUT_
 
 - original and sorted values
 - computation time T(N) for sorting N integers (not the time spent by user inputing)
@@ -133,13 +133,34 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 1. Too many T(n) values yielded zeroes for set values of N when using the clock() when getting processor times.
 2. Group member availability.
-3. During the implementation of random sorted initializations, the program would often skip the prompt for asking the x values after getting N.
-4. Sorted initializations, specifically with N values of 10000 would produce outputs that displayed Chinese characters when opened in Notepad. This behavior is only present with Notepad, other text viewers properly show the intended output of the program.
-5. For sorted values generated, If X is 0 to 40.....[@Adrian]
+3. Sorted initializations, specifically with N values of 10000 would produce outputs that displayed Chinese characters when opened in Notepad. This behavior is only present with Notepad, other text viewers properly show the intended output of the program.
+4. For sorted values generated, If X is 0 to 40.....[@Adrian]
 
 ## Solving Problems
 
-Solving Number : _[String Function](#the-program)_
+Making a function to lessen or remove the loop in our main function (_see: [String Function](#the-program)_).
+
+Using constant (`const data_type var_name`) to make variable unchangable during the function call is a handy way to secure the data that we need to handle.
+
+Using reference (`data_type &var_name`) instead of tipical pass by value to a function, making sure that we only have one variable declaration instead of making another copy of that variable.
+
+Getting The sorted values
+
+```
+(TEST)
+N = 3
+X = 6
+
+NOTE: N + (2)X = N + (2 * X)
+        our program will use N + ((i + 1) * X)
+
+let i = 0
+    array[0] = N+(1)X => 3+(i+1)6 => 3+( (0 + 1) * 6) => 3+( 1 * 6) = 9
+    array[1] = N+(2)X => 3+(i+1)6 => 3+( (1 + 1) * 6) => 3+( 2 * 6) = 15
+    array[2] = N+(3)X => 3+(i+1)6 => 3+( (2 + 1) * 6) => 3+( 3 * 6) = 21
+
+array values = 8, 13, 18
+```
 
 <br>
 
@@ -148,6 +169,18 @@ Solving Number : _[String Function](#the-program)_
 <br>
 
 ## The Program
+
+> The include files used by the program.
+
+```c++
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+#include <sstream>
+#include <fstream>
+#include <ctime>
+#define MAXRANGE 1000000
+```
 
 > For printing the array values without using a lot of for-loops in the main function, we have used the function below:
 
@@ -383,6 +416,10 @@ Generating Random Numbers
 Insertion Sort
 
 - https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_insertion_sort.htm
+
+Time for C
+
+-http://www.gnu.org/software/libc/manual/html_node/CPU-Time.html
 
 <br>
 
