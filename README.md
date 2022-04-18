@@ -188,13 +188,15 @@ The include files used by the program.
 
 > `<cstring>` helps us to use string in our code
 
-> `<sstream>` helps us to use sstream, which is an object that was declared to perform the input/output operations on strings `(we use this to convert the integer to a string for us to easily output them without using repeated loops in our main`.
+> `<sstream>` helps us to use sstream, which is an object that was declared to perform the input/output operations on strings _(we use this to convert the integer to a string for us to easily output them without using repeated loops in our main._
 
 > `<fstream>` helps us to use File, to output/write to files.
 
 > `<ctime>` helps us to use
 
 > `MAXRANGE 1000000` is used as a default value for the maximum range
+
+<br>
 
 For printing the array values without using a lot of for-loops in the main function, we have used the function below:
 
@@ -216,8 +218,6 @@ std::string GetArray(const int *ARRAY, const int &N)
 }
 ```
 
-<br>
-
 > Above It uses both `sstream` and `cstring`.
 
 ```c++
@@ -226,6 +226,48 @@ std::string GetArray(const int *ARRAY, const int &N)
 ```
 
 > The string stream associates a string object with a string. Using this we can read from string as if it were a stream like cin. As said, we use this to perform a convertion from integer to string. Why? we want to lessen the loop inside the main function.
+
+<br>
+
+For Getting the input, we have again used the function.
+
+```c++
+void Input(int *num, const char var_initial)
+{
+    int num_in = 0;
+    while (!(num_in > 0 && num_in <= MAXRANGE))
+    {
+        printf("Input value for %c: ", var_initial);
+        std::cin >> num_in;
+        if (num_in < 1 || num_in > MAXRANGE)
+            printf("Invalid value for %c. Please Try Again.\n\n", var_initial);
+    }
+    *num = num_in;
+}
+```
+
+> First, we will needing the memory address of the number from the main function, and determmine whether it is for `N` or `X`. This is a good implementation for us since again, _We have a goal to lessen or remove all the loop inside our main function_.
+
+> This limits the users from entering wrong inputs. That is why we have included this in our program.
+
+> Why is it the var initial does not use `&var_initial`? it is because throught the program we will use this function 2 times. It is one of the rules of references to referece only one variable, so in respect for the rule, we only use constant - for the data to be unmodified.
+
+<br>
+
+For Randomize Initialization
+
+```c++
+void RandomizeInitialization(int *ARRAY, const int &N)
+{
+    srand(time(NULL));
+    for (int i = 0; i < N; i++)
+        ARRAY[i] = (rand() % MAXRANGE);
+}
+```
+
+> If random numbers are generated with rand() without first calling srand(), your program will create the same sequence of numbers each time it runs.
+
+> If statement does not contain srand set to time(0) or srand set to time(NULL), then running the program again and again will result to same random numbers. Else each execution of the program will have different random results that will be set as array values.
 
 <br>
 
