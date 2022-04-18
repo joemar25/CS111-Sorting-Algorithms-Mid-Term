@@ -548,7 +548,9 @@ String Stream
 
 <br>
 
-Group note: The program is challenging and at the same time `fun`. It is a group effort and we are happy to present what we have learned and what are the stugles that we encounter by doing the project.
+Group note:
+
+The program is challenging and at the same time `fun`. It is a group effort and we are happy to present what we have learned and what are the stugles that we encounter by doing the project.
 Even we have a lot of problems enountered, but the group is there to understand each other's concern and make a new schedule for a meeting incase we have something to clarify about the project.
 We used different strategies mainly data structures in the problems to experement but failed. But that failure help us to understand what are small mistakes that we made and make things better. We hope that everyone is understandable.
 
