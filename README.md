@@ -535,6 +535,10 @@ File Handling
 
 - https://www.guru99.com/cpp-file-read-write-open.html
 
+Quick Sort Problem
+
+- https://stackoverflow.com/questions/63686324/quicksort-to-already-sorted-array
+
 String Stream
 
 - https://www.tutorialspoint.com/stringstream-in-cplusplus
