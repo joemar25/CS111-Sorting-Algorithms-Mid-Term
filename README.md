@@ -23,11 +23,10 @@ This project is intended to give the proper calculations for time effiency of th
 3. [Actual Output](#the-output)
 4. [What are the Problems we encountered?](#problems-encuntered)
 5. [How did we solve those problems?](#solving-problems)
-6. [What do we use?](#the-program)
-7. [Actual Implementation](#implementation)
-8. [Sorting Algorithms](#sorting-algorithms)
-9. [Analysis](#analysis)
-10. [References Used](#references)
+6. [What do we use and the implementations](#the-program)
+7. [Sorting Algorithms](#sorting-algorithms)
+8. [Analysis](#analysis)
+9. [References Used](#references)
 
 <br>
 
@@ -81,7 +80,9 @@ Below is the test run for all values that are need to analyze if the array has s
 
 https://user-images.githubusercontent.com/80235976/163755648-ab8ad641-82f3-48f7-af49-db33c375e6be.mp4
 
-> Note: Video file uploading size in README.md must be below 10mb.
+<br>
+
+> Note: Video file uploading size in README.md must be below 10mb. So, we apologize for the quality.
 
 <br>
 
@@ -90,6 +91,14 @@ https://user-images.githubusercontent.com/80235976/163755648-ab8ad641-82f3-48f7-
 <br>
 
 ## The Output
+
+> Randomize Initialized Array Values
+
+![RANDOMIZE](https://user-images.githubusercontent.com/80235976/163756226-42a76de3-d5e7-4dc5-91ff-05cddc2d5710.PNG)
+
+> Sorted Initialized Array Values
+
+![ALREADY SORTED](https://user-images.githubusercontent.com/80235976/163756230-ceeb10d5-1007-4a54-aeb1-6f93bde0afa8.PNG)
 
 Using the default text editor for Windows is a pain since it generates a lot of unnecessary characters - mainly Chinese keywords instead of numbers. As a group, we have to solve this. At first, we use the tipical `.txt` as output. But that does not change the old output for other Copmuters. We have test `.out` and it works fine but still generated Chinese keywords for other Computers.
 
@@ -122,14 +131,6 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 <br>
 
 ## The Program
-
-<br>
-
----
-
-<br>
-
-## Implementation
 
 > For printing the array values without using a lot of for-loops in the main function, we have used the function below:
 
