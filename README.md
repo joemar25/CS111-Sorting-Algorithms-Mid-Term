@@ -92,13 +92,28 @@ https://user-images.githubusercontent.com/80235976/163755648-ab8ad641-82f3-48f7-
 
 ## The Output
 
+##### NEED TO OUTPUT
+
+- original and sorted values
+- computation time T(N) for sorting N integers (not the time spent by user inputing)
+
+<br>
+
 > Randomize Initialized Array Values
+
+Using N = 100000
 
 ![RANDOMIZE](https://user-images.githubusercontent.com/80235976/163756226-42a76de3-d5e7-4dc5-91ff-05cddc2d5710.PNG)
 
+<br>
+
 > Sorted Initialized Array Values
 
+Using N = 100000 and X = 7
+
 ![ALREADY SORTED](https://user-images.githubusercontent.com/80235976/163756230-ceeb10d5-1007-4a54-aeb1-6f93bde0afa8.PNG)
+
+<br>
 
 Using the default text editor for Windows is a pain since it generates a lot of unnecessary characters - mainly Chinese keywords instead of numbers. As a group, we have to solve this. At first, we use the tipical `.txt` as output. But that does not change the old output for other Copmuters. We have test `.out` and it works fine but still generated Chinese keywords for other Computers.
 
@@ -123,6 +138,8 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 5. For sorted values generated, If X is 0 to 40.....[@Adrian]
 
 ## Solving Problems
+
+Solving Number : _[String Function](#the-program)_
 
 <br>
 
