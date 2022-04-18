@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
-#include <sstream>
 #include <cstring>
+#include <sstream>
 #include <fstream>
 #include <ctime>
 #define MAXRANGE 1000000
@@ -14,10 +14,10 @@ std::string GetArray(const int *ARRAY, const int &N)
 
     for (int i = 0; i < N; i++)
     {
-        stream << ARRAY[i];
-        stream >> temp;
-        stored_value += " " + temp;
-        stream.clear();
+        stream << ARRAY[i];         // steam <- int
+        stream >> temp;             // steam(int) -> temp
+        stored_value += " " + temp; // stored_value <- (string)temp(int)
+        stream.clear();             // clear
     }
     return stored_value; // return string
 }
@@ -181,7 +181,7 @@ int main()
     clock_t start, end;
 
     std::ofstream outputFile;
-    outputFile.open("record.txt");
+    outputFile.open("record.out");
 
     if (!outputFile.is_open())
     {
@@ -189,7 +189,7 @@ int main()
         return -1;
     }
 
-    // initialize variables, pointer array initialised with NULL
+    // variables, pointer-array initialised with NULL value
     int input = 0, N = 0, X = 0, *array = NULL, *temp = NULL;
 
     std::cout << "Welcome to our Project\n\n";
@@ -251,3 +251,5 @@ int main()
     delete[] temp;  // Releases memory pointed to by array
     return 0;
 }
+// for more information please visit: https://github.com/joemar25/CS111_MidTermProject
+// thank you...
