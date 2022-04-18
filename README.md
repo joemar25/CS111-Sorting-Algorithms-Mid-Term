@@ -138,7 +138,7 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 ## Solving Problems
 
-- Making a function to lessen or remove the loop in our main function (_see: [String Function](#the-program)_).
+- Making a function to lessen or remove the loop in our main function (_see: [The Program : String Function](#the-program)_).
 
 - Using constant (`const data_type var_name`) to make variable unchangable during the function call is a handy way to secure the data that we need to handle.
 
@@ -170,7 +170,24 @@ array values = 8, 13, 18
 
 ## The Program
 
-The include files used by the program.
+The Array Used
+
+> As programmers, we need to efficiently manage and manipulate the computer's memory.
+
+> So we have to take advantage of dynamic memory allocation using C++.
+
+> “In dynamic memory allocation, memory is allocated during runtime. But, in this case, it is the responsibility of a programmer to deallocate the dynamically allocated memory when it’s no longer in use. Otherwise, it leads to memory leaks.”
+
+> In the given problem, we are tasked to ask the user to get input from the user in which we need to adjust the size of the array. “We do not know in advance the amount of memory required to store some data.” So, Dynamic allocation is the solution for that.
+
+```c++
+    int *array = NULL;
+    array = new array[N];
+```
+
+<br>
+
+For the include files used by the program.
 
 ```c++
 #include <iostream>
@@ -254,7 +271,7 @@ void Input(int *num, const char var_initial)
 
 <br>
 
-For Randomize Initialization
+For Randomize Initialization of values for arrays.
 
 ```c++
 void RandomizeInitialization(int *ARRAY, const int &N)
@@ -268,6 +285,36 @@ void RandomizeInitialization(int *ARRAY, const int &N)
 > If random numbers are generated with rand() without first calling srand(), your program will create the same sequence of numbers each time it runs.
 
 > If statement does not contain srand set to time(0) or srand set to time(NULL), then running the program again and again will result to same random numbers. Else each execution of the program will have different random results that will be set as array values.
+
+<br>
+
+For Sorted Initialization of values for arrays.
+
+```c++
+void SortedInitialization(int *ARRAY, const int &N, const int &X)
+{
+    for (int i = 0; i < N; i++)
+        ARRAY[i] = N + ((i + 1) * X);
+}
+```
+
+> (_see: [Solving the problem : Getting The sorted values](#solving-problems)_).
+
+<br>
+
+For a convinient way to copy array to another array.
+
+```c++
+void Copy(int *ORIGINAL_COPY, int *HOLDER, const int &N, const int &option)
+{
+    if (option != 1)
+        return;
+    for (int i = 0; i < N; i++)
+        HOLDER[i] = ORIGINAL_COPY[i];
+}
+```
+
+> The function gets two sets of array, and depending on the constant references option - the loop will copy the array to another or not. This keep the memory usage less and more effiencient than. Randoming again and again if the user chooses to have a randomize values for the array.
 
 <br>
 
