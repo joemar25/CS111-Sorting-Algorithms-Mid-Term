@@ -48,13 +48,13 @@ This project is intended to give the proper calculations for time effiency of th
 
 6. Use `#include <ctime>` header to use `clock()` function on helping us to calculate the T(n).
 
-7. Note: `#include <time.h>` for C, is same as `#include <ctime>` in C++.
+7. Note: `#include <time.h>` for C, is the same as `#include <ctime>` in C++.
 
    🤍 ~ `Extra` ~ 🤍
 
-8. User has the choice if he/she want to use randomly generated values or the sorted increasing order at the start of the program - So there is no need for the user to modify the code to alter the results.
+8. The user has the choice if he/she wants to use randomly generated values or the sorted increasing order at the start of the program - So there is no need for the user to modify the code to alter the results.
 
-9. Input checker `if (num <= 0)`, preventing errors and check if it exceeds the MAXIMUM VALUE.
+9. Input checker `if (num <= 0)`, prevent errors and checks if it exceeds the MAXIMUM VALUE.
 
 10. Uses only the standard functions to work on multiple platforms.
 
@@ -115,13 +115,13 @@ Sorted Initialized Array Values
 
 <br>
 
-Using the default text editor for Windows is a pain since it generates a lot of unnecessary characters - mainly Chinese keywords instead of numbers. As a group, we have to solve this. At first, we use the tipical `.txt` as output. But that does not change the old output for other Copmuters. We have test `.out` and it works fine but still generated Chinese keywords for other Computers.
+Using the default text editor for Windows is a pain since it generates a lot of unnecessary characters - mainly Chinese keywords instead of numbers. This always happened in `[Sorted Generated Values]` when N is equals to 10000. As a group, we have solved this. At first, we use the typical `.txt` as output. But that does not change the old output for other Copmuters. We have tested `.out` and it works fine but still generated Chinese keywords for other Computers. While attempting to resolve the issue, we discovered that the output is fine when the value of x is greater. As a result, we conducted a trial and error to find the smallest value of X that will provide acceptable results. The value of X should be 41 and higher.
 
-`[Sorted Generated Values]` For Joemar, it was fine (both runtime and seeing the results) but for Paolo and Adrian after using the program (is ok) - but after cheking the result to a notepad viewer they see a lot of generated Chinese Characters instaed of the array value.
+`[Sorted Generated Values]` For Joemar, it was fine (both runtime and seeing the results) but for Paolo and Adrian after using the program (is ok) - but after cheking the result to a notepad viewer they observed a lot of generated Chinese Characters instead of the array value.
 
-`[Random Generated Values]` is good since it does not generated a single problem for us.
+`[Random Generated Values]` works properly as it had not generated a single problem for us.
 
-`In conclusion:` It is highly suggested to use other text viewer to view result incase the generated arrays are unreadable or in Chinese Characters.
+`In conclusion:` It is highly suggested to use other text viewers to view the results incase the generated arrays are unreadable or in Chinese Characters.
 
 <br>
 
@@ -134,7 +134,6 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 1. Too many T(n) values yielded zeroes for set values of N when using the clock() when getting processor times.
 2. Group member availability.
 3. Sorted initializations, specifically with N values of 10000 would produce outputs that displayed Chinese characters when opened in Notepad. This behavior is only present with Notepad, other text viewers properly show the intended output of the program.
-4. For sorted values generated, If X is 0 to 40.....[@Adrian]
 
 ## Solving Problems
 
@@ -182,7 +181,7 @@ The Array Used
 
 ```c++
     int *array = NULL;
-    array = new array[N];
+    array = new int[N];
 ```
 
 <br>
