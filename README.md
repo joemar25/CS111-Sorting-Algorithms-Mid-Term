@@ -177,7 +177,7 @@ The Array Used
 
 > “In dynamic memory allocation, memory is allocated during runtime. But, in this case, it is the responsibility of a programmer to deallocate the dynamically allocated memory when it’s no longer in use. Otherwise, it leads to memory leaks.”
 
-> In the given problem, we are tasked to ask the user to get input from the user in which we need to adjust the size of the array. “We do not know in advance the amount of memory required to store some data.” So, Dynamic allocation is the solution for that.
+> In the given problem, we are tasked to ask the user to get input in which we need to adjust the size of the array. “We do not know in advance the amount of memory required to store some data.” So, Dynamic allocation is the solution for that.
 
 ```c++
     int *array = NULL;
