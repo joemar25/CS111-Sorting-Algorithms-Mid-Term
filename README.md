@@ -141,7 +141,7 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 - Using constant (`const data_type var_name`) to make variable unchangable during the function call is a handy way to secure the data that we need to handle.
 
-- Using reference (`data_type &var_name`) instead of tipical pass by value to a function, making sure that we only have one variable declaration instead of making another copy of that variable.
+- Using reference (`data_type &var_name`) instead of typical pass by value to a function, making sure that we only have one variable declaration instead of making another copy of that variable.
 
 - `Getting The sorted values`
 
