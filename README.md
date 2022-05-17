@@ -121,7 +121,7 @@ Using the default text editor for Windows is a pain since it generates a lot of 
 
 `[Random Generated Values]` works properly as it had not generated a single problem for us.
 
-`In conclusion:` It is highly suggested to use other text viewers to view the results incase the generated arrays are unreadable or in Chinese Characters.
+`In conclusion:` It is highly suggested to use other text viewers to view the results incase the generated arrays are unreadable or in Chinese Characters. (VS code, DevC++, MS Word...)
 
 <br>
 
