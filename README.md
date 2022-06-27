@@ -1,4 +1,4 @@
-# ⭐️ **CS111 Mid Term Project** ⭐️
+# ⭐️⭐️⭐️ **CS111 Mid Term Project** ⭐️⭐️⭐️
 
 This project is intended to give the proper calculations for time effiency of the Sorting Algorithms _(Insertion Sort, Merge Sort, Quick Sort, Heap Sort)_
 
